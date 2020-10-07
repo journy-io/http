@@ -7,4 +7,4 @@
 !/LICENSE
 !/CHANGELOG.md
 !/package.json
-!/lib/**/*
+!/dist/**/*
