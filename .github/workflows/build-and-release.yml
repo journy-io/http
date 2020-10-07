@@ -30,8 +30,8 @@ jobs:
       - run: npm run test
       - name: Get the version
         id: get_version
-        run: echo ::set-output name=VERSION::${GITHUB_REF#refs/tags/}
-      - run: npm version --tag ${{ steps.get_version.VERSION }}
+        run: echo ::set-output name=tag::${GITHUB_REF/refs\/tags\//}
+      - run: npm version --tag ${{ steps.get_version.outputs.tag }}
       - run: npm run build
       - run: npm publish --access public
         env:
