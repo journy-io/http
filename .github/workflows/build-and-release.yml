@@ -31,7 +31,7 @@ jobs:
       - name: Get the version
         id: get_version
         run: echo ::set-output name=tag::${GITHUB_REF/refs\/tags\//}
-      - run: npm version --tag ${{ steps.get_version.outputs.tag }}
+      - run: npm version ${{ steps.get_version.outputs.tag }}
       - run: npm run build
       - run: npm publish --access public
         env:
