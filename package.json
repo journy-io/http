@@ -1,5 +1,7 @@
 {
   "name": "@journyio/http",
+  "homepage": "https://github.com/journy-io/http#http",
+  "repository": "github:journy-io/http",
   "version": "0.0.0",
   "description": "HTTP utilities",
   "main": "dist/index.js",
