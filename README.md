@@ -1,3 +1,5 @@
+![journy.io](banner.png)
+
 # HTTP
 
 HTTP library that powers our [Node.js SDK](https://github.com/journy-io/js-sdk).
