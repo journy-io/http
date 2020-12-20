@@ -27,6 +27,19 @@ describe("HttpClientNode", () => {
     });
   });
 
+  test("it returns the right status code", async () => {
+    const client = new HttpClientNode(10000);
+    const url = new URL("https://httpbin.org/status/429");
+    const response = await client.send(
+      new HttpRequest(
+        url,
+        "GET",
+        new HttpHeaders({ "User-Agent": "@journyio/http" })
+      )
+    );
+    expect(response.getStatusCode()).toEqual(429);
+  });
+
   test("it does a POST request", async () => {
     const client = new HttpClientNode(10000);
     const url = new URL("https://httpbin.org/post?param=true");
