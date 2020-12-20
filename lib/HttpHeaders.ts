@@ -1,5 +1,7 @@
 export class HttpHeaders {
-  constructor(private readonly headers: { [name: string]: string } = {}) {
+  constructor(
+    private readonly headers: { [name: string]: string | string[] } = {}
+  ) {
     this.headers = Object.keys(this.headers).reduce((headers, name) => {
       return { ...headers, [name.toLowerCase()]: this.headers[name] };
     }, {});

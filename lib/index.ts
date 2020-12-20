@@ -1,8 +1,8 @@
-export * from "./HttpClient";
-export * from "./HttpClientAxios";
-export * from "./HttpClientFixed";
-export * from "./HttpClientConsoleLogging";
-export * from "./HttpRequest";
-export * from "./HttpHeaders";
-export * from "./HttpMethod";
-export * from "./HttpResponse";
+/* eslint-disable import/no-unused-modules */
+export { HttpClient } from "./HttpClient";
+export { HttpClientFixed } from "./HttpClientFixed";
+export { HttpClientConsoleLogging } from "./HttpClientConsoleLogging";
+export { HttpRequest } from "./HttpRequest";
+export { HttpResponse } from "./HttpResponse";
+export { HttpHeaders } from "./HttpHeaders";
+export { HttpMethod } from "./HttpMethod";

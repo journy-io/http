@@ -1,6 +1,7 @@
 import { HttpClientFixed } from "./HttpClientFixed";
 import { HttpRequest } from "./HttpRequest";
 import { HttpResponse } from "./HttpResponse";
+import { URL } from "url";
 
 describe("HttpClientFixed", () => {
   it("works", async () => {

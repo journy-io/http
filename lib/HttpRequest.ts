@@ -1,5 +1,6 @@
 import { HttpHeaders } from "./HttpHeaders";
 import { HttpMethod } from "./HttpMethod";
+import { URL } from "url";
 
 export class HttpRequest {
   constructor(
