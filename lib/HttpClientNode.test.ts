@@ -11,7 +11,7 @@ describe("HttpClientNode", () => {
       new HttpRequest(
         url,
         "GET",
-        new HttpHeaders({ "User-Agent": "@journyio/http" })
+        new HttpHeaders({ "User-Agent": "https://github.com/journy-io/http" })
       )
     );
     expect(response.getStatusCode()).toEqual(200);
@@ -22,7 +22,7 @@ describe("HttpClientNode", () => {
     const body = JSON.parse(response.getBody());
     expect(body).toMatchObject({
       args: { param: "true" },
-      headers: { "User-Agent": "@journyio/http" },
+      headers: { "User-Agent": "https://github.com/journy-io/http" },
       url: url.toString(),
     });
   });
@@ -34,7 +34,7 @@ describe("HttpClientNode", () => {
       new HttpRequest(
         url,
         "GET",
-        new HttpHeaders({ "User-Agent": "@journyio/http" })
+        new HttpHeaders({ "User-Agent": "https://github.com/journy-io/http" })
       )
     );
     expect(response.getStatusCode()).toEqual(429);
@@ -48,7 +48,7 @@ describe("HttpClientNode", () => {
       new HttpRequest(
         url,
         "POST",
-        new HttpHeaders({ "User-Agent": "@journyio/http" }),
+        new HttpHeaders({ "User-Agent": "https://github.com/journy-io/http" }),
         data
       )
     );
@@ -60,7 +60,7 @@ describe("HttpClientNode", () => {
     const body = JSON.parse(response.getBody());
     expect(body).toMatchObject({
       args: { param: "true" },
-      headers: { "User-Agent": "@journyio/http" },
+      headers: { "User-Agent": "https://github.com/journy-io/http" },
       url: url.toString(),
       data: data,
     });
