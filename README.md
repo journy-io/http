@@ -1,4 +1,10 @@
+[![journy.io](banner.png)](https://journy.io/?utm_source=github&utm_content=readme-http)
+
 # HTTP
+
+![npm](https://img.shields.io/npm/v/@journyio/http?color=%234d84f5&style=flat-square)
+
+HTTP library that powers our [Node.js SDK](https://github.com/journy-io/js-sdk).
 
 ## 💾 Installation
 
