@@ -180,3 +180,21 @@ More ideas (not included in this package):
 - Keep track of rate limits
 - Add credentials to requests
 - ...
+
+## 💯 Tests
+
+To run the tests:
+
+```bash
+npm run test
+```
+
+## ❓ Help
+
+We welcome your feedback, ideas and suggestions. We really want to make your life easier, so if we’re falling short or should be doing something different, we want to hear about it.
+
+Please create an issue or contact us via the chat on our website.
+
+## 🔒 Security
+
+If you discover any security related issues, please email hans at journy io instead of using the issue tracker.
