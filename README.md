@@ -25,9 +25,8 @@ yarn add @journyio/http
 Example of GET request:
 
 ```ts
-import { HttpClientNode, HttpRequest } from "@journyio/http";
+import { HttpClientNode, HttpRequest, HttpHeaders } from "@journyio/http";
 import { URL } from "url";
-import { HttpHeaders } from "./HttpHeaders";
 
 const client = new HttpClientNode(/* timeoutInMillis = */ 5000);
 
