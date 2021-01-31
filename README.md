@@ -2,7 +2,8 @@
 
 # HTTP
 
-![npm](https://img.shields.io/npm/v/@journyio/http?color=%234d84f5&style=flat-square)
+[![npm](https://img.shields.io/npm/v/@journyio/http?color=%234d84f5&style=flat-square)](https://www.npmjs.com/package/@journyio/http)
+[![npm downloads](https://img.shields.io/npm/dm/@journyio/http?style=flat-square)](https://www.npmjs.com/package/@journyio/http)
 
 HTTP library that powers our [Node.js SDK](https://github.com/journy-io/js-sdk).
 
