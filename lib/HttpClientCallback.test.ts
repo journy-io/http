@@ -4,7 +4,7 @@ import { HttpResponse } from "./HttpResponse";
 import { URL } from "url";
 import { HttpClientCallback } from "./HttpClientCallback";
 
-describe("HttpClientFixedPaths", () => {
+describe("HttpClientCallback", () => {
   it("works", async () => {
     const requests: HttpRequest[] = [];
     const response1 = new HttpResponse(
