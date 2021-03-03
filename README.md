@@ -143,6 +143,8 @@ test("our API client works", async () => {
 })
 ```
 
+In case your client should be able to return different responses depending on the path of the request, you can take a look at the `HttpClientFixedPath` class.
+
 In PHP world this concept is known as [PSR-18: HTTP Client](https://www.php-fig.org/psr/psr-18/).
 
 Of course, this makes only sense in TypeScript world. Interfaces are not available in JavaScript.
