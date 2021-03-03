@@ -7,3 +7,4 @@ export { HttpRequest } from "./HttpRequest";
 export { HttpResponse } from "./HttpResponse";
 export { HttpHeaders } from "./HttpHeaders";
 export { HttpMethod } from "./HttpMethod";
+export { HttpClientCallback } from "./HttpClientCallback";
