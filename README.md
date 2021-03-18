@@ -2,7 +2,8 @@
 
 # HTTP
 
-![npm](https://img.shields.io/npm/v/@journyio/http?color=%234d84f5&style=flat-square)
+[![npm](https://img.shields.io/npm/v/@journyio/http?color=%234d84f5&style=flat-square)](https://www.npmjs.com/package/@journyio/http)
+[![npm downloads](https://img.shields.io/npm/dm/@journyio/http?style=flat-square)](https://www.npmjs.com/package/@journyio/http)
 
 HTTP library that powers our [Node.js SDK](https://github.com/journy-io/js-sdk).
 
@@ -141,6 +142,8 @@ test("our API client works", async () => {
   expect(http.getLastRequest()).toEqual(new HttpRequest(/* ... */));
 })
 ```
+
+In case your client should be able to return different responses depending on the path of the request, you can take a look at the `HttpClientCallback` class. Here you can give a custom callback to the client, which allows for a lot of flexibility.
 
 In PHP world this concept is known as [PSR-18: HTTP Client](https://www.php-fig.org/psr/psr-18/).
 
