@@ -186,6 +186,12 @@ More ideas (not included in this package):
 
 ## 💯 Tests
 
+To setup [httpbin](https://github.com/postmanlabs/httpbin) locally:
+
+```bash
+docker-compose up -d
+```
+
 To run the tests:
 
 ```bash

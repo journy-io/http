@@ -1,0 +1,6 @@
+version: "3.9"
+services:
+  httpbin:
+    image: kennethreitz/httpbin
+    ports:
+      - "9877:80"
