@@ -74,7 +74,7 @@ describe("HttpClientNode", () => {
     try {
       await client.send(new HttpRequest(new URL("https://httpbin.o/delay/1")));
       throw new Error("Should fail!");
-    } catch (error) {
+    } catch (error: any) {
       expect(error.message).toEqual("getaddrinfo ENOTFOUND httpbin.o");
     }
   });
@@ -85,7 +85,7 @@ describe("HttpClientNode", () => {
     try {
       await client.send(new HttpRequest(new URL(`${httpbin}/delay/1`)));
       throw new Error("Should fail!");
-    } catch (error) {
+    } catch (error: any) {
       expect(error.message).toEqual(`Request to ${httpbin}/delay/1 timed out`);
     }
   });
