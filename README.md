@@ -23,13 +23,19 @@ yarn add @journyio/http
 
 ### HttpClientNode
 
-Example of GET request:
+Uses Node's `http` / `https` modules
 
 ```ts
-import { HttpClientNode, HttpRequest, HttpHeaders } from "@journyio/http";
-import { URL } from "url";
+import { HttpClientNode } from "@journyio/http";
 
 const client = new HttpClientNode(/* timeoutInMillis = */ 5000);
+```
+
+### GET request
+
+```ts
+import { HttpRequest, HttpHeaders } from "@journyio/http";
+import { URL } from "url";
 
 const response = await client.send(
   new HttpRequest(
@@ -46,9 +52,12 @@ console.log(response.getHeaders().byName("x-ratelimit-remaining"));
 console.log(response.getHeaders().byName("X-RateLimit-Remaining"));
 ```
 
-Example of POST request:
+### POST request
 
 ```ts
+import { HttpRequest, HttpHeaders } from "@journyio/http";
+import { URL } from "url";
+
 const response = await client.send(
   new HttpRequest(
     new URL("https://api.domain/users"),
